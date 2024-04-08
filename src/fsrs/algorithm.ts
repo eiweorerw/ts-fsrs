@@ -139,6 +139,9 @@ export class FSRSAlgorithm {
       Math.max(1, Math.round(s * this.intervalModifier)),
       this.param.maximum_interval,
     ) as int;
+    console.log(1111)
+    console.log(newInterval)
+    console.log(this.param)
     return this.apply_fuzz(newInterval, elapsed_days, enable_fuzz);
   }
 
