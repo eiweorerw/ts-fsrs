@@ -15,7 +15,7 @@ export const generatorParameters = (
   props?: Partial<FSRSParameters>,
 ): FSRSParameters => {
   console.log(2222)
-  console.log(props)
+  console.log(props?.enable_fuzz)
   console.log({
     request_retention: props?.request_retention || default_request_retention,
     maximum_interval: props?.maximum_interval || default_maximum_interval,
