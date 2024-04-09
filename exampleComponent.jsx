@@ -102,6 +102,7 @@ const ExampleGenerator = ({ f, cards, setCards, setLogs, className }) => {
 
 const DefaultParams = () => {
     const defaultParams = generatorParameters({"enable_fuzz":false})
+    console.log(defaultParams)
     return <div className="w-1/2 mx-auto">
         <div>Default:</div>
         {Object.keys(defaultParams).map(key => <div>{`${key}:${defaultParams[key]}`}</div>)}
