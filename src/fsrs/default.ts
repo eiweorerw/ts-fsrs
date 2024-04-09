@@ -14,6 +14,14 @@ export const FSRSVersion: string = "3.5.3";
 export const generatorParameters = (
   props?: Partial<FSRSParameters>,
 ): FSRSParameters => {
+  console.log(2222)
+  console.log(props)
+  console.log({
+    request_retention: props?.request_retention || default_request_retention,
+    maximum_interval: props?.maximum_interval || default_maximum_interval,
+    w: props?.w || default_w,
+    enable_fuzz: props?.enable_fuzz || default_enable_fuzz,
+  })
   return {
     request_retention: props?.request_retention || default_request_retention,
     maximum_interval: props?.maximum_interval || default_maximum_interval,
